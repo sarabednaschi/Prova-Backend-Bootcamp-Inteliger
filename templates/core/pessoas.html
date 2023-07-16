@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabela de Pessoas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo:{{titulo}}</h1>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Data de Nascimento</th>
+        </tr>
+        {% for pessoa in pessoas %}
+        <tr>
+            <td>{{ pessoa.nome }}</td>
+            <td>{{ pessoa.sexo }}</td>
+            <td>{{ pessoa.data_nascimento }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

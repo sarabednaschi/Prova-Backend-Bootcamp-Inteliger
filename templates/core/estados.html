@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela de Estados</title>
+     <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<h1>Titulo:{{titulo}}</h1>
+    <table>
+        <tr>
+            <th>Estados</th>
+            <th>Sigla</th>
+        </tr>
+        {% for estado in estados %}
+        <tr>
+            <td>{{ estado.nomes }}</td>
+            <td>{{ estado.siglas }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

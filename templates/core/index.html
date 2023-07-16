@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Prova de python
+    </h1>
+    <hr>
+    <h1>100 números inteiros entre 1 e 9</h1>
+    {% for n in LISTA_NUMEROS_ALEATORIOS %}{{n}}, {% endfor %}
+    <hr>
+    <h1>Soma dos números inteiros aleatórios</h1>
+    {{soma}}
+    <hr>
+    <h1>Números em ordem crescente</h1>
+    {% for n in numeros_em_ordem_crescente %}{{n}}, {% endfor %}
+    <h1>Números em ordem decrecente</h1>
+    {% for n in numeros_em_ordem_decrescente %}{{n}}, {% endfor %}
+    <h1>Pessoas de menor de idade</h1>
+    {% for p in lista_pessoas_menor_de_idade %}{{p.nome}}, {% endfor %}
+</body>
+</html>

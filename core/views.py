@@ -8,7 +8,10 @@ import BO.estados
 class ProvaPythonView(View):
     def get(self, *args, **kwargs):
         contexto = {}
-        LISTA_NUMEROS_ALEATORIOS = [1,2,3,4,5,6,7,8,9,1] *10
+        lista = []
+        for i in range(100):
+            lista.append(random.randint(0,9))
+        LISTA_NUMEROS_ALEATORIOS = lista
 
         random.shuffle(LISTA_NUMEROS_ALEATORIOS)
 
